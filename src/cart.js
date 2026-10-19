@@ -1,7 +1,3 @@
-function notImplemented() {
-  throw new Error("Корзина ещё не реализована. Сначала прочитайте тесты.");
-}
-
 function addToCart(cart, product, quantity) {
   const existingItem = cart.find((item) => item.id === product.id);
   const currentQuantity = existingItem ? existingItem.quantity : 0;
